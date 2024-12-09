@@ -15,6 +15,8 @@ from graphrag.config.models.input_config import InputConfig
 from graphrag.index.config.input import PipelineInputConfig
 from graphrag.index.input.csv import input_type as csv
 from graphrag.index.input.csv import load as load_csv
+from graphrag.index.input.json import input_type as json
+from graphrag.index.input.json import load as load_json
 from graphrag.index.input.text import input_type as text
 from graphrag.index.input.text import load as load_text
 from graphrag.logging.base import ProgressReporter
@@ -26,6 +28,7 @@ log = logging.getLogger(__name__)
 loaders: dict[str, Callable[..., Awaitable[pd.DataFrame]]] = {
     text: load_text,
     csv: load_csv,
+    json: load_json,
 }
 
 
