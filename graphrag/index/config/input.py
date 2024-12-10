@@ -112,5 +112,11 @@ class PipelineTextInputConfig(PipelineInputConfig[Literal[InputFileType.text]]):
     """Number of characters to use from the text as the title."""
 
 
-PipelineInputConfigTypes = PipelineCSVInputConfig | PipelineTextInputConfig
+class PipelineJSONInputConfig(PipelineInputConfig[Literal[InputFileType.json]]):
+    """Represent the configuration for a JSON input."""
+
+    file_type: Literal[InputFileType.json] = InputFileType.json
+
+
+PipelineInputConfigTypes = PipelineCSVInputConfig | PipelineTextInputConfig | PipelineJSONInputConfig
 """Represent the types of inputs that can be used in a pipeline."""
