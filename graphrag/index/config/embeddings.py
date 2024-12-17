@@ -16,7 +16,7 @@ all_embeddings: set[str] = {
     entity_title_embedding,
     entity_description_embedding,
     relationship_description_embedding,
-    document_text_embedding,
+    # document_text_embedding,
     community_title_embedding,
     community_summary_embedding,
     community_full_content_embedding,
