@@ -88,7 +88,7 @@ future = "^1.0.0" # Needed until graspologic fixes their dependency
 typer = "^0.15.1"
 fnllm = "^0.0.10"
 
-tenacity = "^9.0.0"
+tenacity = "^8.0.0"
 json-repair = "^0.30.3"
 tqdm = "^4.67.1"
 httpx = "^0.28.1"
